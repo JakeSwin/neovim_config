@@ -39,6 +39,17 @@ return packer.startup(function(use)
 
   use "Mofiqul/dracula.nvim" -- Dracula Theme
 
+  -- cmp plugins
+  use "hrsh7th/nvim-cmp" -- The completion plugion
+  use "hrsh7th/cmp-buffer" -- buffer completions 
+  use "hrsh7th/cmp-path" -- path completions 
+  use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "saadparwaiz1/cmp_luasnip" -- snippet completion 
+
+  -- snippets
+  use "L3MON4D3/LuaSnip" -- snippet engine
+  use "rafamadriz/friendly-snippets" -- snippets to use
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
